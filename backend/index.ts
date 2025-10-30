@@ -10,6 +10,11 @@ await redis.connect().then(() => {
     console.log("Connected to Redis");
 })
 
+//add fake connection - class experiment
+await redis.connect().then(() => {
+    console.log("Connected to Redis");
+})
+
 await redis2.connect().then(() => {
     console.log("Connected to Redis2");
 })
