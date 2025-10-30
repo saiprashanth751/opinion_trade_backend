@@ -19,6 +19,7 @@ app.use(cors());
 app.use("/v1/user", userRouter);
 app.use("/v1/event", eventRouter);
 
-app.listen(3000, () => {
-    console.log("Server is running on 3000");
+//changed port
+app.listen(3001, () => {
+    console.log("Server is running on 3001");
 });
