@@ -10,9 +10,14 @@ const app = express();
 //     console.log("Connected to Redis");
 // })
 
-// await redis2.connect().then(() => {
-//     console.log("Connected to Redis2");
-// })
+//add fake connection - class experiment
+await redis.connect().then(() => {
+    console.log("Connected to Redis");
+})
+
+await redis2.connect().then(() => {
+    console.log("Connected to Redis2");
+})
 
 app.use(express.json());
 app.use(cors());
